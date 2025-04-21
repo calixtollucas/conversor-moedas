@@ -29,6 +29,8 @@ public class ExchangerAPI {
         HttpResponse<String> response = getClient().send(request, HttpResponse.BodyHandlers.ofString());
         //converte json em conversao
         Conversao conversao = ConversaoMapper.fromJsonToConversao(currency, targetCurrencyCode, response.body());
+        //loga conversão
+        ConversaoLogger.log(conversao);
         //retorna conversao
         return conversao;
     }
