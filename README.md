@@ -96,11 +96,5 @@ Após cloná-lo, abra o terminal na pasta ou navegue até ela e execute o seguin
 
 ### 💡 Observações
 
-- Certifique-se de que o arquivo `Main.java` está com o seguinte pacote no topo do arquivo:
-
-  ```java
-  package application;
-  ```
-
 - A pasta `out/` conterá a estrutura de pacotes com os `.class` gerados.
 - A dependência `gson-2.11.0.jar` é usada para lidar com JSON.
